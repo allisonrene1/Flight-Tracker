@@ -3,9 +3,7 @@ package com.apitt.api.flight_tracker.model;
 import java.util.List;
 
 public class FlightInformation {
-
-
-    public FlightInformation(String icao24, int startTime, int endTime, String callsign, List<Waypoint> path) {
+    public FlightInformation(String icao24, int startTime, int endTime, String callsign, List<Object[]> path) {
         this.icao24 = icao24;
         this.startTime = startTime;
         this.endTime = endTime;
@@ -21,7 +19,7 @@ public class FlightInformation {
 
     private String callsign;
 
-    List<Waypoint> path;
+    List<Object[]> path;
 
 
     public String getIcao24() {
@@ -56,11 +54,13 @@ public class FlightInformation {
         this.callsign = calllsign;
     }
 
-    public List<Waypoint> getPath() {
+    public List<Object[]> getPath() {
         return path;
     }
 
-    public void setPath(List<Waypoint> path) {
+    public void setPath(List<Object[]> path) {
         this.path = path;
     }
+
+
 }

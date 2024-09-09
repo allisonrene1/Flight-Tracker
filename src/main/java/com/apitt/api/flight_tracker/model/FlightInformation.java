@@ -5,11 +5,11 @@ import java.util.List;
 public class FlightInformation {
 
 
-    public FlightInformation(String icao24, int startTime, int endTime, String calllsign, List<Waypoint> path) {
+    public FlightInformation(String icao24, int startTime, int endTime, String callsign, List<Waypoint> path) {
         this.icao24 = icao24;
         this.startTime = startTime;
         this.endTime = endTime;
-        this.calllsign = calllsign;
+        this.callsign = callsign;
         this.path = path;
     }
 
@@ -19,7 +19,7 @@ public class FlightInformation {
 
     private int endTime;
 
-    private String calllsign;
+    private String callsign;
 
     List<Waypoint> path;
 
@@ -48,12 +48,12 @@ public class FlightInformation {
         this.endTime = endTime;
     }
 
-    public String getCalllsign() {
-        return calllsign;
+    public String getCallsign() {
+        return callsign;
     }
 
     public void setCalllsign(String calllsign) {
-        this.calllsign = calllsign;
+        this.callsign = calllsign;
     }
 
     public List<Waypoint> getPath() {
